@@ -23,7 +23,7 @@ pids
 /cmp-app/node_modules
 
 # Build files
-cmp-app/build
+# cmp-app/build
 /cmp-appsrc/app/app.template.module.js
 
 #webstorm

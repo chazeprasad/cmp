@@ -1,0 +1,61 @@
+.cmp_info_top{
+    height: auto;
+    width: 100%;
+}
+
+.cmp_info_top {
+    /*background: #1f2932 none repeat scroll 0 0;*/
+    display: table;
+    height: 108px;
+    position: relative;
+    width: 100%;
+}
+.cmp_info_tablecell {
+    display: table-cell;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 1;
+}
+.upload_button_camera {
+    left: 120px;
+    overflow: hidden;
+    position: absolute;
+    top: 40px;
+    width: 23px;
+    z-index: 20;
+}
+.upload_button_camera input[type="file"] {
+    cursor: pointer;
+    height: 20px;
+    left: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: absolute;
+    top: 0;
+    width: 23px;
+}
+.cmp_info_tablecell h3 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 12px;
+    position: relative;
+
+}
+.cmp_info_tablecell h3:after {
+    /*background: #f35c50 none repeat scroll 0 0;*/
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 50%;
+    margin-left: -20px;
+    position: absolute;
+    width: 40px;
+}
+.cmp_info_bottom {
+    padding: 20px 25px 0 15px;
+    position: relative;
+    z-index: 30;
+}
