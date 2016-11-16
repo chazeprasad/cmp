@@ -1,0 +1,18 @@
+{
+  "name": "ant",
+  "version": "1.0.0",
+  "description": "App Server",
+  "main": "ant.server.js",
+  "scripts": {
+    
+    "ant": "node --stack-size=32000 ant.server.js"
+
+  },
+  "author": "Prasad",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^1.2.4",
+    "koa-static": "^2.0.0",
+    "path": "^0.12.7"
+  }
+}

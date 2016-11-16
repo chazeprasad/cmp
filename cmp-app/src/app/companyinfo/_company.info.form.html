@@ -1,0 +1,97 @@
+<md-content class="md-padding">
+    <form name="cmpForm" ng-submit="$ctrl.submit()" novalidate>
+        <md-input-container flex>
+            <label>Domain name:</label>
+            <input name="domainName" ng-model="$ctrl.formData.domainName" required md-maxlength="10" minlength="4">
+            <div ng-messages="cmpForm.domainName.$error" ng-show="cmpForm.domainName.$dirty">
+                <div ng-message="required">This is required!</div>
+                <div ng-message="md-maxlength">That's too long!</div>
+                <div ng-message="minlength">That's too short!</div>
+            </div>
+        </md-input-container>
+        <md-input-container flex>
+            <label>Sub name:</label>
+            <input name="subName" ng-model="$ctrl.formData.subName"  required md-maxlength="10" minlength="4">
+            <div ng-messages="cmpForm.subName.$error" ng-show="cmpForm.subName.$dirty">
+                <div ng-message="required">This is required!</div>
+                <div ng-message="md-maxlength">That's too long!</div>
+                <div ng-message="minlength">That's too short!</div>
+            </div>
+        </md-input-container>
+        <md-input-container flex>
+            <label>Comapany name:</label>
+            <input name="companyName" ng-model="$ctrl.formData.companyName" required md-maxlength="10" minlength="4">
+            <div ng-messages="cmpForm.companyName.$error" ng-show="cmpForm.companyName.$dirty">
+                <div ng-message="required">This is required!</div>
+                <div ng-message="md-maxlength">That's too long!</div>
+                <div ng-message="minlength">That's too short!</div>
+            </div>
+        </md-input-container>
+
+        <md-input-container flex>
+            <label>Address1:</label>
+            <input name="address1" name ng-model="$ctrl.formData.address1" required md-maxlength="20" minlength="4">
+            <div ng-messages="cmpForm.address1.$error" ng-show="cmpForm.address1.$dirty">
+                <div ng-message="required">This is required!</div>
+                <div ng-message="md-maxlength">That's too long!</div>
+                <div ng-message="minlength">That's too short!</div>
+            </div>
+        </md-input-container>
+        <md-input-container flex>
+            <label>Address2:</label>
+            <input name="address2" ng-model="$ctrl.formData.address2">
+
+        </md-input-container>
+
+
+
+        <div layout layout-sm="column">
+            <md-input-container flex>
+                <label>City</label>
+                <input name="city" ng-model="$ctrl.formData.city" required md-maxlength="10" minlength="4">
+                <div ng-messages="cmpForm.city.$error" ng-show="cmpForm.city.$dirty">
+                    <div ng-message="required">This is required!</div>
+                    <div ng-message="md-maxlength">That's too long!</div>
+                    <div ng-message="minlength">That's too short!</div>
+                </div>
+
+            </md-input-container>
+            <md-input-container flex>
+                <label>County</label>
+                <input name="county" ng-model="$ctrl.formData.state" required md-maxlength="10" minlength="4">
+                <div ng-messages="cmpForm.county.$error" ng-show="cmpForm.county.$dirty">
+                    <div ng-message="required">This is required!</div>
+                    <div ng-message="md-maxlength">That's too long!</div>
+                    <div ng-message="minlength">That's too short!</div>
+                </div>
+            </md-input-container>
+            <md-input-container flex>
+                <label>Postal Code</label>
+                <input name="postalCode" ng-model="$ctrl.formData.postalCode" required md-maxlength="10" minlength="4">
+                <div ng-messages="cmpForm.postalCode.$error" ng-show="cmpForm.postalCode.$dirty">
+                    <div ng-message="required">This is required!</div>
+                    <div ng-message="md-maxlength">That's too long!</div>
+                    <div ng-message="minlength">That's too short!</div>
+                </div>
+            </md-input-container>
+
+        </div>
+
+        <md-input-container flex>
+            <label>Country:</label>
+            <input name="country" ng-model="$ctrl.formData.country" required md-maxlength="10" minlength="4">
+            <div ng-messages="cmpForm.country.$error" ng-show="cmpForm.country.$dirty">
+                <div ng-message="required">This is required!</div>
+                <div ng-message="md-maxlength">That's too long!</div>
+                <div ng-message="minlength">That's too short!</div>
+            </div>
+        </md-input-container>
+
+        <md-input-container>
+            <md-button type="submit"  class="md-raised md-primary" ng-disabled="cmpForm.$invalid">
+                Submit
+            </md-button>
+        </md-input-container>
+
+    </form>
+</md-content>
