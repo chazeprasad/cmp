@@ -8,7 +8,7 @@ Ant.core.path           = require('path');
 
 Ant.settings = {}
 Ant.settings.PORT = 2030;
-Ant.settings.STATIC 		= Ant.core.path.join(__dirname, '../javan-video-dashboard-app/build');
+Ant.settings.STATIC 		= Ant.core.path.join(__dirname, '../cmp-app/build');
 
 Ant.app                 = Ant.core.koa();
 Ant.co                  = require("co");
